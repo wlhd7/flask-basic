@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard · Flask Basic{% endblock %}
+
+{% block content %}
+  <section>
+    <h1>Welcome back, {{ current_user.email }}!</h1>
+    <p>You have successfully logged in to the Flask basic starter project.</p>
+  </section>
+{% endblock %}

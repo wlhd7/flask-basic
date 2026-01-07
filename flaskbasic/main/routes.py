@@ -1,0 +1,14 @@
+"""View handlers for the main blueprint."""
+
+from flask import render_template
+from flask_login import login_required
+
+from . import bp
+
+
+@bp.route("/")
+@login_required
+def index():
+    """Render the dashboard landing page."""
+
+    return render_template("main/index.html")
